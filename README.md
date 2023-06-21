@@ -51,7 +51,11 @@
 ## 顶会论文  
 
 ### <span id='aclpretrain'>ACL 2023: Pre-trained Personalized Review Summarization with  Effective Salience Estimation</span>    
+待更新    
+
 ### <span id='aclformer'>ACL 2023: A^2-Former: Adaptive Attention for Sparse-Based Long-Sequence Transformer</span>    
+待更新    
+
 ### <span id='instance'>EMNLP 2022: Instance-Guided Prompt Learning for Few-Shot Text Matching</span>   
 **论文简介**  少样本文本匹配是自然语言处理中一种重要的基础任务，它主要用于在少量样本情况下确定两段文本的语义是否相同。其主要设计模式是将文本匹配重新转换为预训练任务，并在所有实例中使用统一的提示信息，但这种模式并没有考虑到提示信息和实例之间的联系。所以我们认为**实例和提示之间动态增强的相关性是必要的**，因为单一的固定的提示信息并不能充分适应推理中的所有不同实例。为此我们提出了IGATE模型用于少样本的文本匹配，它是一种新颖的且可以即插即用的提示学习方法。**IGATE模型中的gate机制应用于嵌入和PLM编码器之间，利用实例的语义来调节gate对提示信息的影响**。实验结果表明，IGATE在MRPC和QQP数据集上实现了SOTA性能并优于之前最好的基线模型。     
 **论文链接**  [论文](https://aclanthology.org/2022.findings-emnlp.285/)    
