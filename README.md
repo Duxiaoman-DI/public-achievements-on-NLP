@@ -10,7 +10,7 @@
 **顶会论文**   
 * ACL
   * [(2023) Pre-trained Personalized Review Summarization with  Effective Salience Estimation](#aclpretrain)
-  * [(2023) A^2-Former: Adaptive Attention for Sparse-Based Long-Sequence Transformer](#aclformer)
+  * [(2023) Adaptive Attention for Sparse-Based Long-Sequence Transformer](#aclformer)
 * IJCAI-FinLLM
   * [(2023) XuanYuan 2.0: A Large Chinese Financial Chat Model with Hundreds of Billions Parameters](#ijcaixuanyuan)
   * [(2023) CGCE: A Chinese Generative Chat Evaluation Benchmark for General and Financial Domains](#ijcaicgce)
