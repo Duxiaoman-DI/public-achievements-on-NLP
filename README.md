@@ -11,14 +11,14 @@
 * ACL
   * [(2023) Pre-trained Personalized Review Summarization with  Effective Salience Estimation](#aclpretrain)
   * [(2023) Adaptive Attention for Sparse-Based Long-Sequence Transformer](#aclformer)
-* IJCAI-FinLLM
-  * [(2023) XuanYuan 2.0: A Large Chinese Financial Chat Model with Hundreds of Billions Parameters](#ijcaixuanyuan)
-  * [(2023) CGCE: A Chinese Generative Chat Evaluation Benchmark for General and Financial Domains](#ijcaicgce)
+* IJCAI
+  * [(FinLLM 2023) CGCE: A Chinese Generative Chat Evaluation Benchmark for General and Financial Domains](#ijcaicgce)
 * EMNLP
   * [(2022) Instance-Guided Prompt Learning for Few-Shot Text Matching](#instance)
   * [(2022) Transition-based Knowledge Graph Embedding with Synthetic Relation](#transition)
   * [(2022) ExpertPLM: Pre-training Expert Representation for Expert Finding ](#expertplm)
-* CIKM    
+* CIKM
+  * [(2023) XuanYuan 2.0: A Large Chinese Financial Chat Model with Hundreds of Billions Parameters](#ijcaixuanyuan)
   * [(2022) ExpertBert: Pretraining Expert Finding](#expertpretrain)
   * [(2022) Efficient Non-sampling Expert Finding](#nosample)
   * [(2022) DeepVT:Deep View-Temporal Interaction Network for News Recommendation](#deepvt)
