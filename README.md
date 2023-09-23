@@ -8,15 +8,8 @@
 
 
 **顶会论文**   
-* ACL
-  * [(2023) Pre-trained Personalized Review Summarization with  Effective Salience Estimation](#aclpretrain)
-  * [(2023) Adaptive Attention for Sparse-Based Long-Sequence Transformer](#aclformer)
 * IJCAI
   * [(FinLLM 2023) CGCE: A Chinese Generative Chat Evaluation Benchmark for General and Financial Domains](#ijcaicgce)
-* EMNLP
-  * [(2022) Instance-Guided Prompt Learning for Few-Shot Text Matching](#instance)
-  * [(2022) Transition-based Knowledge Graph Embedding with Synthetic Relation](#transition)
-  * [(2022) ExpertPLM: Pre-training Expert Representation for Expert Finding ](#expertplm)
 * CIKM
   * [(2023) XuanYuan 2.0: A Large Chinese Financial Chat Model with Hundreds of Billions Parameters](#ijcaixuanyuan)
   * [(2023) Sentiment-aware Review Summarization with Personalized Multi-task Fine-tuning](#cikmsenti)
@@ -24,6 +17,13 @@
   * [(2022) Efficient Non-sampling Expert Finding](#nosample)
   * [(2022) DeepVT:Deep View-Temporal Interaction Network for News Recommendation](#deepvt)
   * [(2021) DML: Dynamic Multi-Granularity Learning for BERT-Based Document Reranking](#dml)
+* EMNLP
+  * [(2022) Instance-Guided Prompt Learning for Few-Shot Text Matching](#instance)
+  * [(2022) Transition-based Knowledge Graph Embedding with Synthetic Relation](#transition)
+  * [(2022) ExpertPLM: Pre-training Expert Representation for Expert Finding ](#expertplm)
+* ACL
+  * [(2023) Pre-trained Personalized Review Summarization with  Effective Salience Estimation](#aclpretrain)
+  * [(2023) Adaptive Attention for Sparse-Based Long-Sequence Transformer](#aclformer)
 * ACM MM
   * [(2021) Position-Augmented Transformers with Entity-Aligned Mesh for TextVQA](#textvqa)
 * WWWW   
@@ -61,39 +61,11 @@
 
 ## 顶会论文  
 
-### <span id='aclpretrain'>ACL 2023: Pre-trained Personalized Review Summarization with  Effective Salience Estimation</span>    
-待更新    
-<br/>  
-
-### <span id='aclformer'>ACL 2023: A^2-Former: Adaptive Attention for Sparse-Based Long-Sequence Transformer</span>    
-待更新    
-<br/>  
 
 ### <span id='ijcaicgce'>FinLLM 2023 CGCE: A Chinese Generative Chat Evaluation Benchmark for General and Financial Domains</span>    
 **论文简介**   本文介绍了一个专注于通用和金融领域的中文生成式聊天评估基准，包括200个通用领域的问题和150个金融领域的专业问题。论文使用人工评分来评估生成式聊天模型的准确性、连贯性、表达清晰度和完整性等因素。这个基准为研究人员提供了一个标准化的框架，可以评估和比较中文生成式聊天模型，促进自然语言生成（NLG）的发展。  
 **论文链接**  [论文](https://arxiv.org/pdf/2305.14471.pdf)    
 <br/>  
-
-
-### <span id='instance'>EMNLP 2022: Instance-Guided Prompt Learning for Few-Shot Text Matching</span>   
-**论文简介**  少样本文本匹配是自然语言处理中一种重要的基础任务，它主要用于在少量样本情况下确定两段文本的语义是否相同。其主要设计模式是将文本匹配重新转换为预训练任务，并在所有实例中使用统一的提示信息，但这种模式并没有考虑到提示信息和实例之间的联系。所以我们认为**实例和提示之间动态增强的相关性是必要的**，因为单一的固定的提示信息并不能充分适应推理中的所有不同实例。为此我们提出了IGATE模型用于少样本的文本匹配，它是一种新颖的且可以即插即用的提示学习方法。**IGATE模型中的gate机制应用于嵌入和PLM编码器之间，利用实例的语义来调节gate对提示信息的影响**。实验结果表明，IGATE在MRPC和QQP数据集上实现了SOTA性能并优于之前最好的基线模型。     
-**论文链接**  [论文](https://aclanthology.org/2022.findings-emnlp.285/)    
-![instance图片](https://github.com/Duxiaoman-DI/public-achievements-on-NLP/blob/main/instance-guided.png)   
-<br/>   
-
-### <span id='transition'>EMNLP 2022: Transition-based Knowledge Graph Embedding with Synthetic Relation</span>   
-**论文简介**  在自然语言处理任务中如何将知识的关联关系引入到模型中是一项具有挑战性的任务，同时也是KG其他下游任务的基础，如知识问答、知识匹配和知识推理等。虽然预训练模型中已经暗涵各类常识知识，但是如何显式地表示知识中各元素的关联仍然是十分重要的问题。**所以我们提出并构建了新的关系嵌入模式，即构建三段式的关系表示并使得头尾实体的差值近似于该表示**。具体来说，三段式合成关系表示中的两部分先分别与头尾实体进行交互并产生新的向量表示，最后将新的三段式关系表示进行合成形成最终的关系嵌入用于模型的训练。实验结果表明，我们的模型可以在相似参数量的情况下有效提升模型性能。    
-**论文链接**  [论文](https://aclanthology.org/2022.findings-emnlp.86/)      
-![trasitionbased图片](https://github.com/Duxiaoman-DI/public-achievements-on-NLP/blob/main/transitionbasedkgd.png)   
-<br/>   
-
-
-### <span id='expertplm'>EMNLP 2022: ExpertPLM: Pre-training Expert Representation for Expert Finding</span>   
-**论文简介**  本文是在CIKM 2022论文ExperBert的基础上，进一步挖掘如何利用用户的历史文本数据（如搜索内容，回答问题等）对用户进行个性化预训练表征。虽然ExpertBert能够保持预训练与下游任务一致性，然而学到的用户表示局限与某一类下游任务。因此本文提出的Expert PLM与下游任务解耦，旨在利用预训练语言模型PLMs学习更加通用和准确的个性化用户表示。首先将用户的所有历史行为进行聚合，得到该用户的预训练语料。此处我们**不仅聚合每条历史行为的文本内容，而且将历史行为的用户特征融合到输入中，来表示该用户对该条记录的影响**，以社区问答为例，用户的每个历史回答收到的投票数可以显示出用户回答该问题的能力，在实际业务中，我们将每条历史记录的时间、位置等用户个性化信息，融合到预训练中。这样的预训练语料构造方式相比仅仅利用文本内容，能够体现出当前用户的个性化特性。**此外，本文提出一种融合用户画像信息的预训练方式，在掩码预训练模型(MLM)的基础上，同时对用户画像进行预测，这样能够进一步提升模型在预训练过程中学到更多个性化表征**。    
-在社区问答专家发现的下游任务中，ExpertPLM模型能够在多个公开数据集能够显著超越基线算法，实现优异的性能。    
-**论文链接**  [论文](https://aclanthology.org/2022.findings-emnlp.74/)
-![expertplm图片](https://github.com/Duxiaoman-DI/public-achievements-on-NLP/blob/main/expertplmpretrain.png)   
-<br/>    
 
 ### <span id='ijcaixuanyuan'>CIKM 2023: XuanYuan 2.0 A Large Chinese Financial Chat Model with Hundreds of Billions Parameters</span>   
 **论文简介**    随着ChatGPT的广泛应用，大型语言模型已成为学术界和工业界关注的热点问题。然而训练超大规模的中文模型往往面临着灾难性遗忘等问题，它会导致大模型在学习新任务或新数据时，丧失之前已学习到的通用能力。为此我们提出了混合微调的全新训练方法，它从根本上改变了以BERT为代表的预训练-微调的训练方式，也改变了ChatGPT提出的指令微调训练框架，是大模型训练方法的全新里程碑。混合微调可以有效地整合通用知识和领域特定知识，并结合预训练和微调阶段进行大模型的训练。同时，我们还将其率先应用到千亿大模型轩辕中，在专业领域和通用领域中都取得了很好的效果。    
@@ -127,6 +99,36 @@
 **论文简介**  近年来，预训练的语言模型广泛应用于文本的检索排序任务中。然而，在真实场景中，用户的行为往往受到选择或曝光偏差的影响，这可能会导致错误的标签进而引入额外噪声。而对于不同候选文档，以往的训练优化目标通常使用单一粒度和静态权重。这使得排序模型的性能更容易受到上述问题的影响。因此，在本文中我们重点研究了基于BERT的文档重排序任务，开创性地提出了动态多粒度学习方法。该种方法能够让不同文档的权重根据预测概率动态变化，从而减弱不正确的文档标签带来的负面影响。此外，该方法还同时考虑了文档粒度和实例粒度来平衡候选文档的相对关系和绝对分数。在相关基准数据集上的实验进一步验证了我们模型的有效性。其中涉及到的预训练语言模型和排序模型为度小满获客、信贷、征信等业务提供了有效的文本特征和精准的排序结果，在促进业务稳健快速发展中起到了十分重要的作用。     
 **论文链接**  [论文](https://dl.acm.org/doi/10.1145/3459637.3482090)     
 <br/>    
+
+
+### <span id='aclpretrain'>ACL 2023: Pre-trained Personalized Review Summarization with  Effective Salience Estimation</span>    
+待更新    
+<br/>  
+
+### <span id='aclformer'>ACL 2023: A^2-Former: Adaptive Attention for Sparse-Based Long-Sequence Transformer</span>    
+待更新    
+<br/>  
+
+### <span id='instance'>EMNLP 2022: Instance-Guided Prompt Learning for Few-Shot Text Matching</span>   
+**论文简介**  少样本文本匹配是自然语言处理中一种重要的基础任务，它主要用于在少量样本情况下确定两段文本的语义是否相同。其主要设计模式是将文本匹配重新转换为预训练任务，并在所有实例中使用统一的提示信息，但这种模式并没有考虑到提示信息和实例之间的联系。所以我们认为**实例和提示之间动态增强的相关性是必要的**，因为单一的固定的提示信息并不能充分适应推理中的所有不同实例。为此我们提出了IGATE模型用于少样本的文本匹配，它是一种新颖的且可以即插即用的提示学习方法。**IGATE模型中的gate机制应用于嵌入和PLM编码器之间，利用实例的语义来调节gate对提示信息的影响**。实验结果表明，IGATE在MRPC和QQP数据集上实现了SOTA性能并优于之前最好的基线模型。     
+**论文链接**  [论文](https://aclanthology.org/2022.findings-emnlp.285/)    
+![instance图片](https://github.com/Duxiaoman-DI/public-achievements-on-NLP/blob/main/instance-guided.png)   
+<br/>   
+
+### <span id='transition'>EMNLP 2022: Transition-based Knowledge Graph Embedding with Synthetic Relation</span>   
+**论文简介**  在自然语言处理任务中如何将知识的关联关系引入到模型中是一项具有挑战性的任务，同时也是KG其他下游任务的基础，如知识问答、知识匹配和知识推理等。虽然预训练模型中已经暗涵各类常识知识，但是如何显式地表示知识中各元素的关联仍然是十分重要的问题。**所以我们提出并构建了新的关系嵌入模式，即构建三段式的关系表示并使得头尾实体的差值近似于该表示**。具体来说，三段式合成关系表示中的两部分先分别与头尾实体进行交互并产生新的向量表示，最后将新的三段式关系表示进行合成形成最终的关系嵌入用于模型的训练。实验结果表明，我们的模型可以在相似参数量的情况下有效提升模型性能。    
+**论文链接**  [论文](https://aclanthology.org/2022.findings-emnlp.86/)      
+![trasitionbased图片](https://github.com/Duxiaoman-DI/public-achievements-on-NLP/blob/main/transitionbasedkgd.png)   
+<br/>   
+
+
+### <span id='expertplm'>EMNLP 2022: ExpertPLM: Pre-training Expert Representation for Expert Finding</span>   
+**论文简介**  本文是在CIKM 2022论文ExperBert的基础上，进一步挖掘如何利用用户的历史文本数据（如搜索内容，回答问题等）对用户进行个性化预训练表征。虽然ExpertBert能够保持预训练与下游任务一致性，然而学到的用户表示局限与某一类下游任务。因此本文提出的Expert PLM与下游任务解耦，旨在利用预训练语言模型PLMs学习更加通用和准确的个性化用户表示。首先将用户的所有历史行为进行聚合，得到该用户的预训练语料。此处我们**不仅聚合每条历史行为的文本内容，而且将历史行为的用户特征融合到输入中，来表示该用户对该条记录的影响**，以社区问答为例，用户的每个历史回答收到的投票数可以显示出用户回答该问题的能力，在实际业务中，我们将每条历史记录的时间、位置等用户个性化信息，融合到预训练中。这样的预训练语料构造方式相比仅仅利用文本内容，能够体现出当前用户的个性化特性。**此外，本文提出一种融合用户画像信息的预训练方式，在掩码预训练模型(MLM)的基础上，同时对用户画像进行预测，这样能够进一步提升模型在预训练过程中学到更多个性化表征**。    
+在社区问答专家发现的下游任务中，ExpertPLM模型能够在多个公开数据集能够显著超越基线算法，实现优异的性能。    
+**论文链接**  [论文](https://aclanthology.org/2022.findings-emnlp.74/)
+![expertplm图片](https://github.com/Duxiaoman-DI/public-achievements-on-NLP/blob/main/expertplmpretrain.png)   
+<br/>    
+
 
 ### <span id='textvqa'>ACM MM 2021: Position-Augmented Transformers with Entity-Aligned Mesh for TextVQA</span>    
 **论文简介**  许多图像除了实际的物体和背景等信息外，通常还包含着很有价值的文本信息，这对于理解图像场景是十分重要的。所以这篇文章主要研究了基于文本的视觉问答任务，这项任务要求机器可以理解图像场景并阅读图像中的文本来回答相应的问题。然而之前的大多数工作往往需要设计复杂的图结构和利用人工指定的特征来构建图像中视觉实体和文本之间的位置关系。而传统的多模态Transformer也不能有效地获取相对位置信息和原始图像特征。为了直观有效地解决这些问题，我们提出了一种新颖的模型，即具有实体对齐网格的位置增强Transformer。与之前的模型相比，我们在不需要复杂规则的情况下，显式地引入了目标检测和OCR识别的视觉实体的连续相对位置信息。此外，我们根据物体与OCR实体映射关系，用直观的实体对齐网格代替复杂的图形结构。在该网格中，不同位置的离散实体和图像的区块信息可以充分交互。相关实验显示，我们所提出的方法在多个基准数据集上超越了同类模型。而其中所用到目标检测、OCR以及基于Transformer的文本表示等方法源自度小满AI-Lab在CV和NLP领域的基础技术积累，已服务于信贷保险等多个业务场景。     
