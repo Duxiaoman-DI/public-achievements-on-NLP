@@ -19,6 +19,7 @@
   * [(2022) ExpertPLM: Pre-training Expert Representation for Expert Finding ](#expertplm)
 * CIKM
   * [(2023) XuanYuan 2.0: A Large Chinese Financial Chat Model with Hundreds of Billions Parameters](#ijcaixuanyuan)
+  * [(2023) Sentiment-aware Review Summarization with Personalized Multi-task Fine-tuning](#cikmsenti)
   * [(2022) ExpertBert: Pretraining Expert Finding](#expertpretrain)
   * [(2022) Efficient Non-sampling Expert Finding](#nosample)
   * [(2022) DeepVT:Deep View-Temporal Interaction Network for News Recommendation](#deepvt)
@@ -68,6 +69,12 @@
 待更新    
 <br/>  
 
+### <span id='ijcaicgce'>FinLLM 2023 CGCE: A Chinese Generative Chat Evaluation Benchmark for General and Financial Domains</span>    
+**论文简介**   本文介绍了一个专注于通用和金融领域的中文生成式聊天评估基准，包括200个通用领域的问题和150个金融领域的专业问题。论文使用人工评分来评估生成式聊天模型的准确性、连贯性、表达清晰度和完整性等因素。这个基准为研究人员提供了一个标准化的框架，可以评估和比较中文生成式聊天模型，促进自然语言生成（NLG）的发展。  
+**论文链接**  [论文](https://arxiv.org/pdf/2305.14471.pdf)    
+<br/>  
+
+
 ### <span id='instance'>EMNLP 2022: Instance-Guided Prompt Learning for Few-Shot Text Matching</span>   
 **论文简介**  少样本文本匹配是自然语言处理中一种重要的基础任务，它主要用于在少量样本情况下确定两段文本的语义是否相同。其主要设计模式是将文本匹配重新转换为预训练任务，并在所有实例中使用统一的提示信息，但这种模式并没有考虑到提示信息和实例之间的联系。所以我们认为**实例和提示之间动态增强的相关性是必要的**，因为单一的固定的提示信息并不能充分适应推理中的所有不同实例。为此我们提出了IGATE模型用于少样本的文本匹配，它是一种新颖的且可以即插即用的提示学习方法。**IGATE模型中的gate机制应用于嵌入和PLM编码器之间，利用实例的语义来调节gate对提示信息的影响**。实验结果表明，IGATE在MRPC和QQP数据集上实现了SOTA性能并优于之前最好的基线模型。     
 **论文链接**  [论文](https://aclanthology.org/2022.findings-emnlp.285/)    
@@ -86,6 +93,16 @@
 在社区问答专家发现的下游任务中，ExpertPLM模型能够在多个公开数据集能够显著超越基线算法，实现优异的性能。    
 **论文链接**  [论文](https://aclanthology.org/2022.findings-emnlp.74/)
 ![expertplm图片](https://github.com/Duxiaoman-DI/public-achievements-on-NLP/blob/main/expertplmpretrain.png)   
+<br/>    
+
+### <span id='ijcaixuanyuan'>CIKM 2023: XuanYuan 2.0 A Large Chinese Financial Chat Model with Hundreds of Billions Parameters</span>   
+**论文简介**    随着ChatGPT的广泛应用，大型语言模型已成为学术界和工业界关注的热点问题。然而训练超大规模的中文模型往往面临着灾难性遗忘等问题，它会导致大模型在学习新任务或新数据时，丧失之前已学习到的通用能力。为此我们提出了混合微调的全新训练方法，它从根本上改变了以BERT为代表的预训练-微调的训练方式，也改变了ChatGPT提出的指令微调训练框架，是大模型训练方法的全新里程碑。混合微调可以有效地整合通用知识和领域特定知识，并结合预训练和微调阶段进行大模型的训练。同时，我们还将其率先应用到千亿大模型轩辕中，在专业领域和通用领域中都取得了很好的效果。    
+**论文链接**    待公开  
+<br/>    
+
+### <span id='cikmsenti'>CIKM 2023: Sentiment-aware Review Summarization with Personalized Multi-task Fine-tuning</span>   
+**论文简介**    本文提出了一种基于预训练语言模型（PLMs）多任务微调的的评论摘要生成的框架。与传统的多任务学习不同，本文将用户/产品的ID和历史信息融入基于PLMs中，以微调方式学习评论摘要的*个性化*表示。在此基础上，我们设计了一个辅助的上下文感知的情感分类任务和一个情感引导个性化评论摘要任务。实验结果表明，我们的方法能生成与情感一致的摘要，并在评论摘要和情感分类任务上优于许多有竞争力的方法。    
+**论文链接**    待公开  
 <br/>    
 
 ### <span id='expertpretain'>CIKM 2022: ExpertBert: Pretraining Expert Finding</span>  
